@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+   display:flex;
+   flex-direction:row;
+   border:2px solid black;
+   
+  background-color: DodgerBlue;
+  justify-content: space-between; /* Optional: Distribute with spacing */
+  align-items: stretch;
+}
+.main-class{
+
+ border:2px solid red;
+ display:flex;
+ flex-direction:column;
+ height:px;
+ justify-content:space-between;
+ padding:30px;
+ 
+
+}
+/* Ensure images fit within all flex containers */
+.flex-container > div > img,
+.flex-container3 > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flex-container3 {
+   display:flex;
+   flex-direction:row;
+   border:2px solid black;
+   padding:10px;
+   
+  background-color: DodgerBlue;
+  align-items: stretch;
+
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  flex: 1;
+ 
+}
+.flex-container3 {
+  display: flex;
+  gap: 10px;  /* Adjust spacing as needed */
+}
+
+
+.flex-container3 > div:nth-child(1) {
+  width: calc(66.66% - 5px);
+  
+}
+
+
+
+
+</style>
+</head>
+<body>
+    <div class="main-class">
+        <div class="flex-container">
+          <div><img src="image1.jpg" alt="Image 1"></div>
+          <div><img src="image2.jpg" alt="Image 2"></div>
+          <div><img src="image3.jpg" alt="Image 3"></div>
+        </div>
+      
+        <div class="flex-container">
+          <div><img src="image4.jpg" alt="Image 4"></div>
+          <div><img src="image5.jpg" alt="Image 5"></div>
+        </div>
+        <div class="flex-container3">
+          <div><img src="image6.jpg" alt="Image 6"></div>
+          <div><img src="image7.jpg" alt="Image 7"></div>
+        </div>
+      </div>
+
+
+
+
+</body>
+</html>
+
